@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente: El Secreto de Mamá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="room">
+            <div id="lamp" class="object">
+                <div class="lamp-shade"></div>
+                <div class="lamp-stand"></div>
+            </div>
+
+            <div id="painting" class="object tilted">
+                <div class="canvas"></div>
+            </div>
+
+            <div id="screwdriver" class="object hidden">
+                <div class="handle"></div>
+                <div class="shaft"></div>
+            </div>
+
+            <div id="shadow-number" class="hidden">3</div>
+
+            <div id="bookshelf">
+                <div class="book red" data-order="rojo">CUERPO</div>
+                <div class="book gray" data-order="gris">ARMA</div>
+                <div class="book black" data-order="negro">MOTIVO</div>
+            </div>
+
+            <div id="coffee-cup" class="object">
+                <div class="cup-body"></div>
+                <div class="cup-ear"></div>
+            </div>
+
+            <div id="safe" class="object">
+                <div class="dial"></div>
+            </div>
+
+            <div id="envelope" class="hidden">
+                <div class="wax-seal"></div>
+            </div>
+        </div>
+
+        <div id="inventory-panel">
+            <h3>EVIDENCIAS</h3>
+            <div id="inventory-slots">
+                <div class="slot" id="slot-0"></div>
+                <div class="slot" id="slot-1"></div>
+                <div class="slot" id="slot-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="safe-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>CAJA FUERTE</h2>
+            <input type="text" id="n1" placeholder="Primer número">
+            <input type="text" id="n2" placeholder="Segundo número">
+            <input type="text" id="word" placeholder="Palabra Secreta">
+            <div class="btns">
+                <button id="unlock-btn">ABRIR</button>
+                <button id="close-modal">CERRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="letter-modal" class="modal hidden">
+        <div class="letter">
+            <h1>💖 Feliz Día de la Madre 💖</h1>
+            <p>Has resuelto el misterio mamá. Pero el secreto más grande no estaba en la caja fuerte sino en quien la abrió.</p>
+            <p>Has demostrado ser una gran detective, pero nada comparado con el nivel de madre que eres. 
+                No hay palabras en el diccionario para decirte lo increíble que eres ni tiempo suficiente para darte las 
+                gracias por todo lo que haces por nosotros. Siempre te preocupas, y pase lo que pase siempre te estás riendo. 
+                Contigo solamente puede haber palabras de agradecimiento porque dicen que la perfección no existe, 
+                pero tú la estás rozando y no podía no decirlo, tu arroz con pollo ya la supero hace rato. Gracias por ser tú, mamá. Te quiero ♾️</p>
+            <button onclick="location.reload()">FINALIZAR CASO</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
